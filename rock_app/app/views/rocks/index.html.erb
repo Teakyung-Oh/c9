@@ -1,0 +1,8 @@
+<% @rocks.each do |rock| %>
+   player : <%= rock.player %>
+   computer : <%= rock.computer %>
+   result : <%= rock.result %>
+   <a href = "/rocks/show/<%= rock.id %>">상세보기</a>
+   <a href = "/rocks/destroy/<%= rock.id %>">삭제하기</a>
+   <hr>
+<% end %>

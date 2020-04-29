@@ -1,0 +1,2 @@
+class Rockhold < ApplicationRecord
+end

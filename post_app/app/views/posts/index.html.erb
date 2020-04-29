@@ -1,0 +1,11 @@
+<a href="/posts/new">새글쓰기</a>
+<hr>
+<% @posts.each do |post| %>
+  id : <%= post.id %>
+  title : <%= post.title %>
+  content : <%= post.content %>
+  <a href = "/posts/show/<%= post.id %>">상세보기</a>
+  <a href = "/posts/edit/<%= post.id %>">수정하기</a>
+  <a href = "/posts/destroy/<%= post.id %>">삭제하기</a>
+  <hr>
+<% end %>
